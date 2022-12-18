@@ -81,3 +81,43 @@ class Paloma(Pajaro):
     pass
 
 tututu = Paloma(10, 'Dalton', 4)
+
+
+class Vehiculo:
+    def acelerar(self):
+        pass
+    
+    def frenar(self):
+        pass
+
+class Automovil(Vehiculo):
+    pass
+
+
+palabra = "polimorfismo"
+lista = ["Clases", "POO", "Polimorfismo"]
+tupla = (1, 2, 3, 80)
+
+for mi_item in [palabra, lista, tupla]:
+    print(len(mi_item)) 
+
+class Mago():
+    def atacar(self):
+        print("Ataque mágico")
+
+class Arquero():
+    def atacar(self):
+        print("Lanzamiento de flecha")
+
+class Samurai():
+    def atacar(self):
+        print("Ataque con katana")
+
+legolas = Arquero()
+gandalf = Mago()
+samuraiX = Samurai()
+
+personajes = [legolas, gandalf, samuraiX]
+
+for personaje in personajes:
+    personaje.atacar()
